@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='com.sfcc.codeanalyzer' version='1.1.4.201802071124'>
+    <update id='com.sfcc.codeanalyzer' range='[0.0.0,1.1.4.201802071124)' severity='0'/>
+    <properties size='5'>
+      <property name='org.eclipse.equinox.p2.name' value='Code Analyzer'/>
+      <property name='org.eclipse.equinox.p2.provider' value='Salesforce'/>
+      <property name='maven-groupId' value='CodeAnalyzer'/>
+      <property name='maven-artifactId' value='com.sfcc.codeanalyzer'/>
+      <property name='maven-version' value='1.1.4-SNAPSHOT'/>
+    </properties>
+    <provides size='3'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='com.sfcc.codeanalyzer' version='1.1.4.201802071124'/>
+      <provided namespace='osgi.bundle' name='com.sfcc.codeanalyzer' version='1.1.4.201802071124'/>
+      <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+    </provides>
+    <requires size='4'>
+      <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+      <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+    </requires>
+    <artifacts size='1'>
+      <artifact classifier='osgi.bundle' id='com.sfcc.codeanalyzer' version='1.1.4.201802071124'/>
+    </artifacts>
+    <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+    <touchpointData size='1'>
+      <instructions size='1'>
+        <instruction key='manifest'>
+          Bundle-SymbolicName: com.sfcc.codeanalyzer;singleton:=true&#xA;Bundle-Version: 1.1.4.201802071124&#xA;
+        </instruction>
+      </instructions>
+    </touchpointData>
+  </unit>
+</units>

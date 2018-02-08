@@ -1,0 +1,81 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>CodeAnalyzer</groupId>
+  <artifactId>CodeAnalyzer.releng</artifactId>
+  <version>1.1.4-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+   
+ <properties>
+ 
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+ </properties>
+  
+  <repositories>
+ 	 <!-- add Oxygen repository to resolve dependencies -->
+  	<repository>
+   		<id>Neon</id>
+   		<layout>p2</layout>
+   		<url>http://download.eclipse.org/releases/neon/</url>
+  	</repository>
+ </repositories>
+ 
+  <build>
+
+    <plugins>
+     
+      <plugin>
+      	<groupId>org.eclipse.tycho</groupId>
+      	<artifactId>tycho-maven-plugin</artifactId>
+      	<version>1.0.0</version>
+      	<extensions>true</extensions>
+      </plugin>
+    
+    
+    		<plugin>
+   			 <groupId>org.eclipse.tycho</groupId>
+    			<artifactId>tycho-versions-plugin</artifactId>
+    			<version>1.0.0</version>
+   		</plugin>
+   		<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>2.10</version>
+            <executions>
+                <execution>
+                    <id>copy-dependencies</id>
+                    <phase>initialize</phase>
+                    <goals>
+                        <goal>copy-dependencies</goal>
+                    </goals>
+                    <configuration>
+                        <includeScope>runtime</includeScope>
+                        <stripVersion>true</stripVersion>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+   		</plugins>
+   		  <pluginManagement>
+   		<plugins>
+   		
+   		  
+   	</plugins>
+   	  </pluginManagement>
+
+  </build>
+  
+  <modules>
+  	
+  	<module>../CodeAnalyzer.feature</module>
+  	<module>../CodeAnalyzer.p2</module>
+  	<module>../CodeAnalyzer</module>
+  </modules>
+  <dependencies>
+  	<dependency>
+  		<groupId>org.jsoup</groupId>
+  		<artifactId>jsoup</artifactId>
+  		<version>1.11.2</version>
+  	</dependency>
+  </dependencies>
+</project>

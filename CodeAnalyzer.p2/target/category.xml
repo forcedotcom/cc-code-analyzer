@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/CodeAnalyzer.feature_1.1.4.qualifier.jar" id="CodeAnalyzer.feature" version="1.1.4.qualifier">
+      <category name="Code Analyzer"/>
+   </feature>
+   <category-def name="Code Analyzer" label="Code Analyzer"/>
+</site>

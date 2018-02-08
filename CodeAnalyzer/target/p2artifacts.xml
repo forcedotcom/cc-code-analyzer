@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?artifactRepository version='1.1.0'?>
+<artifacts size='1'>
+  <artifact classifier='osgi.bundle' id='com.sfcc.codeanalyzer' version='1.1.4.201802071124'>
+    <properties size='5'>
+      <property name='artifact.size' value='404885'/>
+      <property name='download.size' value='404885'/>
+      <property name='maven-groupId' value='CodeAnalyzer'/>
+      <property name='maven-artifactId' value='com.sfcc.codeanalyzer'/>
+      <property name='maven-version' value='1.1.4-SNAPSHOT'/>
+    </properties>
+  </artifact>
+</artifacts>

@@ -1,0 +1,15 @@
+.metadata
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+*.launch
+.factorypath
+.buildpath
+.target
+.tern-project
+.texlipse

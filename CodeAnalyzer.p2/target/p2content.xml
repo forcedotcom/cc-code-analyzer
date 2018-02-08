@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<units size='1'>
+  <unit id='201802071124.Code Analyzer' version='1.0.0.2177dD_Co-7735I373G557A'>
+    <properties size='2'>
+      <property name='org.eclipse.equinox.p2.name' value='Code Analyzer'/>
+      <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+    </properties>
+    <provides size='1'>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='201802071124.Code Analyzer' version='1.0.0.2177dD_Co-7735I373G557A'/>
+    </provides>
+    <requires size='1'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='CodeAnalyzer.feature.feature.group' range='[1.1.4.201802071124,1.1.4.201802071124]'/>
+    </requires>
+    <touchpoint id='null' version='0.0.0'/>
+  </unit>
+</units>
