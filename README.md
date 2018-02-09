@@ -5,10 +5,11 @@ SFCC allows caching of ISML templates and the implemented include logic may some
 
 ## Installing the plug-in
 
-1. Download the [cc-code-analyzer.jar](https://github.com/tmontovert/cc-code-analyzer/blob/master/CodeAnalyzer.p2/target/repository/plugins/com.sfcc.codeanalyzer_1.1.4.201802071124.jar) file.
-2. Navigate to Applications on Mac, right click the eclipse.app and select the Show Package Contents > Contents > Eclipse > dropins. 
-3. Copy the cc-code-analyzer.jar in this location.
-4. Start Eclipse
+1. Download the [CodeAnalyzer.p2-1.1.4-SNAPSHOT.zip](https://github.com/tmontovert/cc-code-analyzer/blob/master/CodeAnalyzer.p2/target/CodeAnalyzer.p2-1.1.4-SNAPSHOT.zip) file.
+2. Locally unzip the file
+3. Add the extracted repository as an update site within Help > Install New Software.
+3. Install the Code Analyzer
+4. restart eclipse
 
 ## Usage
 
